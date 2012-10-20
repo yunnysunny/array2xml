@@ -124,8 +124,11 @@ class Array2xml {
     public function saveAs($name,$path="") {
         if($path=='')   $path = ROOT.'/cache/';
         if(!file_exists($path)) {
-            echo 'the channel path '.$path.' doesnot exists<br />';
-            return false;
+			if (@mkdir($path,0666)) {
+			} else {
+				#echo 'the path '.$path.' doesnot exists<br />';
+				return false;
+			}
         }
         ob_start();
         $this->printXML();
