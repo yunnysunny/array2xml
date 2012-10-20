@@ -1,13 +1,14 @@
 <?php
+defined('ROOT') or die('Access restricted!');
 /**
  *  Array 2 xml
  *
  *  Copyright (c) gaoyang 2011
  *  Licensed under the MIT:
  *  http://www.opensource.org/licenses/mit-license.php
- *	@author gaoyang（高阳）qq:243853184 email:yunnysunny@gmail.com
+ *	@author gaoyang qq:243853184 email:yunnysunny@gmail.com
  *	@email yunnysunny@gmail.com
- *	@version 1.0
+ *	@version 1.1
  *
  * @var xmlDOM $doc xml文档
  * @var boolean $bom 是否生成带有BOM的utf8文件
